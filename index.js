@@ -184,4 +184,7 @@ bot.on("message", async (msg) => {
             bot.sendMessage(chatid,"Receiving is off",{reply_to_message_id: msg.message_id});
         }
     }
+    else if(message){
+        bot.sendMessage(chatid,"Can not understood!",{reply_to_message_id: msg.message_id});
+    }
 })
